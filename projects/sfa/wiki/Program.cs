@@ -1,6 +1,6 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using Ganss.XSS;
+using Ganss.Xss;
 using HtmlBuilders;
 using LiteDB;
 using Markdig;
@@ -272,7 +272,7 @@ static string RenderPageContent(Page page) => RenderMarkdown(page.Content);
 
 static string RenderDeletePageButton(Page page, AntiforgeryTokenSet antiForgery)
 {
-    var antiForgeryField = Input.Hidden.Name(antiForgery.FormFieldName).Value(antiForgery.RequestToken);
+    var antiForgeryField = Input.Hidden.Name(antiForgery.FormFieldName).Value(antiForgery.RequestToken!);
     HtmlTag id = Input.Hidden.Name("Id").Value(page.Id.ToString());
     var submit = Div.Style("margin-top", "20px").Append(Button.Class("uk-button uk-button-danger").Append("Delete Page"));
 
@@ -306,7 +306,7 @@ static string RenderPageAttachmentsForEdit(Page page, AntiforgeryTokenSet antiFo
 
     static HtmlTag CreateDelete(int pageId, string attachmentId, AntiforgeryTokenSet antiForgery)
     {
-        var antiForgeryField = Input.Hidden.Name(antiForgery.FormFieldName).Value(antiForgery.RequestToken);
+        var antiForgeryField = Input.Hidden.Name(antiForgery.FormFieldName).Value(antiForgery.RequestToken!);
         var id = Input.Hidden.Name("Id").Value(attachmentId.ToString());
         var name = Input.Hidden.Name("PageId").Value(pageId.ToString());
 
@@ -353,7 +353,7 @@ static string BuildForm(PageInput input, string path, AntiforgeryTokenSet antiFo
 {
     bool IsFieldOK(string key) => modelState!.ContainsKey(key) && modelState[key]!.ValidationState == ModelValidationState.Invalid;
 
-    var antiForgeryField = Input.Hidden.Name(antiForgery.FormFieldName).Value(antiForgery.RequestToken);
+    var antiForgeryField = Input.Hidden.Name(antiForgery.FormFieldName).Value(antiForgery.RequestToken!);
 
     var nameField = Div
       .Append(Label.Class("uk-form-label").Append(nameof(input.Name)))
@@ -405,9 +405,9 @@ static string BuildForm(PageInput input, string path, AntiforgeryTokenSet antiFo
                  .Append(contentField)
                  .Append(attachmentField);
 
-    if (input.Id.HasValue)
+    if (input.Id is object)
     {
-        HtmlTag id = Input.Hidden.Name("Id").Value(input.Id.ToString());
+        HtmlTag id = Input.Hidden.Name("Id").Value(input.Id.ToString()!);
         form = form.Append(id);
     }
 
@@ -443,71 +443,73 @@ class Render
     };
 
     (Template head, Template body, Template layout) _templates = (
-      head: Scriban.Template.Parse(@"
-        <meta charset=""utf-8"">
-        <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
-        <title>{{ title }}</title>
-        <link rel=""stylesheet"" href=""https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"" />
-        {{ header }}
-        <style>
-          .last-modified { font-size: small; }
-          a:visited { color: blue; }
-          a:link { color: red; }
-        </style>
-      "),
-      body: Scriban.Template.Parse(@"
-      <nav class=""uk-navbar-container"">
-        <div class=""uk-container"">
-          <div class=""uk-navbar"">
-            <div class=""uk-navbar-left"">
-              <ul class=""uk-navbar-nav"">
-                <li class=""uk-active""><a href=""/""><span uk-icon=""home""></span></a></li>
-              </ul>
-            </div>
-            <div class=""uk-navbar-center"">
-              <div class=""uk-navbar-item"">
-                <form action=""/new-page"">
-                  <input class=""uk-input uk-form-width-large"" type=""text"" name=""pageName"" placeholder=""Type desired page title here""></input>
-                  <input type=""submit""  class=""uk-button uk-button-default"" value=""Add New Page"">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      {{ if at_side_panel != """" }}
-        <div class=""uk-container"">
-        <div uk-grid>
-          <div class=""uk-width-4-5"">
-            <h1>{{ page_name }}</h1>
-            {{ content }}
-          </div>
-          <div class=""uk-width-1-5"">
-            {{ at_side_panel }}
-          </div>
-        </div>
-        </div>
-      {{ else }}
-        <div class=""uk-container"">
-          <h1>{{ page_name }}</h1>
-          {{ content }}
-        </div>
-      {{ end }}
-            
-      <script src=""https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js""></script>
-      <script src=""https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js""></script>    
-      {{ at_foot }}
-      "),
-      layout: Scriban.Template.Parse(@"
-      <!DOCTYPE html>
-        <head>
-          {{ head }}
-        </head>
-        <body>
-          {{ body }}
-        </body>
-      </html>
-    ")
+      head: Scriban.Template.Parse(
+        """
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>{{ title }}</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+          {{ header }}
+          <style>
+            .last-modified { font-size: small; }
+            a:visited { color: blue; }
+            a:link { color: red; }
+          </style>
+          """),
+      body: Scriban.Template.Parse("""
+                <nav class="uk-navbar-container">
+                  <div class="uk-container">
+                    <div class="uk-navbar">
+                      <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                          <li class="uk-active"><a href="/"><span uk-icon="home"></span></a></li>
+                        </ul>
+                      </div>
+                      <div class="uk-navbar-center">
+                        <div class="uk-navbar-item">
+                          <form action="/new-page">
+                            <input class="uk-input uk-form-width-large" type="text" name="pageName" placeholder="Type desired page title here"></input>
+                            <input type="submit"  class="uk-button uk-button-default" value="Add New Page">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+                {{ if at_side_panel != "" }}
+                  <div class="uk-container">
+                  <div uk-grid>
+                    <div class="uk-width-4-5">
+                      <h1>{{ page_name }}</h1>
+                      {{ content }}
+                    </div>
+                    <div class="uk-width-1-5">
+                      {{ at_side_panel }}
+                    </div>
+                  </div>
+                  </div>
+                {{ else }}
+                  <div class="uk-container">
+                    <h1>{{ page_name }}</h1>
+                    {{ content }}
+                  </div>
+                {{ end }}
+                      
+                <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+                {{ at_foot }}
+                
+          """),
+      layout: Scriban.Template.Parse("""
+                <!DOCTYPE html>
+                  <head>
+                    {{ head }}
+                  </head>
+                  <body>
+                    {{ body }}
+                  </body>
+                </html>
+          """)
     );
 
     // Use only when the page requires editor
@@ -793,7 +795,7 @@ record PageInput(int? Id, string Name, string Content, IFormFile? Attachment)
 
         IFormFile? file = form.Files["Attachment"];
 
-        return new PageInput(pageId, name, content, file);
+        return new PageInput(pageId, name!, content!, file);
     }
 }
 
