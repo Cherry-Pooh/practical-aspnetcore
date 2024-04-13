@@ -1,17 +1,16 @@
 using System.Diagnostics;
-
 using OpenTelemetry.Trace;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Exporter;
 
 var builder = WebApplication.CreateBuilder();
-builder.Services.AddOpenTelemetryTracing(b =>
+
+builder.Services.AddOpenTelemetry().WithTracing((b) =>
 {
-    b.SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(builder.Environment.ApplicationName))
+     b.SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(builder.Environment.ApplicationName))
      .AddAspNetCoreInstrumentation()
      .AddConsoleExporter( options => options.Targets = ConsoleExporterOutputTargets.Console);
 });
-
 
 WebApplication app = builder.Build();
 app.Run(async context =>
