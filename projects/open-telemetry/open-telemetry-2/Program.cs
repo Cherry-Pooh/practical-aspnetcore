@@ -5,7 +5,7 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Exporter;
 
 var builder = WebApplication.CreateBuilder();
-builder.Services.AddOpenTelemetryTracing(b =>
+builder.Services.AddOpenTelemetry().WithTracing(b =>
 {
     b
      .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(builder.Environment.ApplicationName))
