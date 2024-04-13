@@ -11,7 +11,7 @@ builder.Services.AddSwaggerDocument(settings =>
 var app = builder.Build();
 app.UseStaticFiles();
 app.UseOpenApi();
-app.UseSwaggerUi3(settings =>
+app.UseSwaggerUi(settings =>
 {
     settings.TagsSorter = "alpha";
     settings.OperationsSorter = "alpha";
