@@ -5,16 +5,16 @@
     
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Grpc.Tools" Version="2.46.3">
+    <PackageReference Include="Grpc.Tools" Version="2.62.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Google.Protobuf" Version="3.21.6" />
-    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.52.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Grpc.JsonTranscoding" Version="7.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.26.1" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.62.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Grpc.JsonTranscoding" Version="8.0.4" />
   </ItemGroup>
   <ItemGroup>
-    <Protobuf Include="billboard.proto" GrpcServices="Server"/>
+    <Protobuf Include="billboard.proto" GrpcServices="Server" />
     <Watch Include="*.proto" />
   </ItemGroup>
 </Project>
