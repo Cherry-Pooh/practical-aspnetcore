@@ -31,4 +31,4 @@ Notes:
   This sample shows how Orchard Core Framework handles multi tenancy and how each tenant have its own configuration file.
 
 
-dotnet6
+dotnet8
