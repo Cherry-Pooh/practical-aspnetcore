@@ -10,7 +10,6 @@
 
   `WebApplication.CreateEmptyBuilder` creates `WebApplicationBuilder` with no built-in behavior.
 
-
 ## WebApplication (6)
 
   This is a set of samples that demonstrates things that you can do with the default configuration using `WebApplication.Create()` before you have to resort to `WebApplication.CreateBuilder()`. 

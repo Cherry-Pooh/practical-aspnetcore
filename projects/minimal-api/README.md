@@ -175,3 +175,5 @@ In these examples we are using the familiar `Host.CreateDefaultBuilder(args)` ho
 * [IFormFileCollection](iform-file-collection)
   
   This sample demonstrates the usage of `IFormFileCollection` to upload multiple files in Minimal API.
+
+dotnet8

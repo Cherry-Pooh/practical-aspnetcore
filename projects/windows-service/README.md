@@ -4,4 +4,4 @@
 
     This sample shows how to host Kestrel from Windows Service. 
 
-    .net8
+    dotnet8

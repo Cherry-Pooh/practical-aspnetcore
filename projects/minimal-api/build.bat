@@ -36,4 +36,4 @@ dotnet build parameter-binding-route-implicit
 dotnet build parameter-binding-special-types
 dotnet build route-constraints-decimal
 dotnet build route-constraints-int
-dotnet build typed-results-1
+dotnet test typed-results-1
