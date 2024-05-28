@@ -56,6 +56,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [System.Text.Json](/projects/json)                                      | 22  |                                                                              |
 | [Syndications](/projects/syndications)                                  | 3   |                                                                              |
 | [Testing](/projects/testing)                                            | 1   |                                                                              |
+| [Unpoly](/projects/unpoly)                                              | 1   |                                                                              |
 | [URL Redirect/Rewrite](/projects/rewrite)                               | 6   |                                                                              |
 | [Uri Helper](/projects/uri-helper)                                      | 5   |                                                                              |
 | [Windows Service](/projects/windows-service)                            | 1   |                                                                              |
