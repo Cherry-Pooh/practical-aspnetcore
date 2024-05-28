@@ -30,6 +30,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [Generic Hosting](/projects/generic-host)                               | 9   |                                                                              |
 | [gRPC](/projects/grpc) (including grpc-Web)                             | 12  |                                                                              |
 | [Health Check](/projects/health-check)                                  | 6   |                                                                              |
+| [HTMX](/projects/htmx)                                                  | 1   |                                                                              |
 | [IHttpClientFactory](/projects/httpclientfactory)                       | 4   |                                                                              |
 | [IHostedService](/projects/ihosted-service)                             | 2   |                                                                              |
 | [Logging](/projects/logging)                                            | 4   |                                                                              |
@@ -39,7 +40,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [Minimal API](/projects/minimal-api)                                    | 36  | Routing, Parameter Bindings, etc                                             |
 | [Minimal Hosting](/projects/minimal-hosting)                            | 23  |                                                                              |
 | [MVC](/projects/mvc)                                                    | 47  | Localization, Routing, Razor Class Library, Tag Helpers, View Component, etc |
-| [Output Cache Middleware](/projects/output-cache-middleware)             |     |                                                                              |
+| [Output Cache Middleware](/projects/output-cache-middleware)            |     |                                                                              |
 | [Open Telemetry](/projects/open-telemetry/)                             | 3   |                                                                              |
 | [Orchard Core](/projects/orchard-core)                                  | 4   |                                                                              |
 | [Path String (HttpContext.Request.Path)](/projects/path-string)         | 1   |                                                                              |
