@@ -1,7 +1,7 @@
 using Htmx;
 
 var app = WebApplication.Create();
-app.Map("/", () =>
+app.MapGet("/", () =>
 {
     var html = """
         <html>
@@ -15,7 +15,7 @@ app.Map("/", () =>
     return Results.Content(html, "text/html");
 });
 
-app.Map("/htmx", (HttpRequest request) =>
+app.MapGet("/htmx", (HttpRequest request) =>
 {
     if (request.IsHtmx() is false)
         return Results.Content("");
