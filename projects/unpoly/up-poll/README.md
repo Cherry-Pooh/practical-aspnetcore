@@ -8,5 +8,6 @@ We are using the `up-poll` attribute as documented [here](https://unpoly.com/up-
     </div>
 ```
 
-[!NOTE]
-It is importat that the API returns a matching response otherwise you will not get the desired result (polling).
+>[!NOTE]
+>
+>It is importat that the API returns a matching response otherwise you will not get the desired result (polling).
