@@ -18,3 +18,6 @@ These examples show how to integrate [UnpolyJS](https://unpoly.com/) with your M
 
   Use `up-hungry` to load content fragement at untargeted elements. If the server returns a matching fragment, the untargeted elements will be loaded. 
 
+* [up-flashes](up-flashes)
+
+  Use `up-flashes` to provide flash message functionality.
