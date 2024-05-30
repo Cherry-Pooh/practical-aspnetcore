@@ -1,4 +1,4 @@
-# HTMX
+# HTMX (3)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2 Beta 1](https://v2-0v2-0.htmx.org/posts/2024-03-15-htmx-2-0-0-beta1-is-released/) in all samples.
 
@@ -11,3 +11,7 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [trigger-load-2](trigger-load-2)
 
   This example shows how to use HTMX `hx-trigger="load delay:1s"` with `hx-swap="outerHTML"` functionalities to create self updating element. 
+
+* [swap](swap)
+  
+  This example shows how to control where the response from the server will be swapped related to the target using `hx-swap`.

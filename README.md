@@ -30,7 +30,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [Generic Hosting](/projects/generic-host)                               | 9   |                                                                              |
 | [gRPC](/projects/grpc) (including grpc-Web)                             | 12  |                                                                              |
 | [Health Check](/projects/health-check)                                  | 6   |                                                                              |
-| [HTMX](/projects/htmx)                                                  | 2   |                                                                              |
+| [HTMX](/projects/htmx)                                                  | 3   |                                                                              |
 | [IHttpClientFactory](/projects/httpclientfactory)                       | 4   |                                                                              |
 | [IHostedService](/projects/ihosted-service)                             | 2   |                                                                              |
 | [Logging](/projects/logging)                                            | 4   |                                                                              |

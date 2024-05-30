@@ -15,6 +15,7 @@ app.MapGet("/", () =>
             <body>
                 <div class="container">
                     <h1>Various hx-swap options</h1>
+                    <p>You can find the full documentation <a href="https://v2-0v2-0.htmx.org/attributes/hx-swap/">here</a></p>
                     <div class="row">
                         <div class="col-md-3 m-3">
                             <strong>innerHTML</strong><br/>
@@ -35,6 +36,22 @@ app.MapGet("/", () =>
                         <div class="col-md-3 m-3">
                             <strong>afterbegin</strong><br/>
                             <div hx-get="/htmx/afterbegin" hx-trigger="click" hx-swap="afterbegin">Click Me</div>
+                        </div>
+                        <div class="col-md-3 m-3">
+                            <strong>beforeend</strong><br/>
+                            <div hx-get="/htmx/beforeend" hx-trigger="click" hx-swap="beforeend">Click Me</div>
+                        </div>
+                        <div class="col-md-3 m-3">
+                            <strong>afterend</strong><br/>
+                            <div hx-get="/htmx/afterend" hx-trigger="click" hx-swap="afterend">Click Me</div>
+                        </div>
+                        <div class="col-md-3 m-3">
+                            <strong>delete</strong><br/>
+                            <div hx-get="/htmx/delete" hx-trigger="click" hx-swap="delete">Click Me</div>
+                        </div>
+                        <div class="col-md-3 m-3">
+                            <strong>none</strong><br/>
+                            <div hx-get="/htmx/none" hx-trigger="click" hx-swap="none">Click Me</div>
                         </div>
                     </div>
                 </div>
@@ -57,7 +74,9 @@ app.MapGet("/htmx/{key}", (HttpRequest request, string key) =>
         "textContent" => Results.Content($"""<div style="background-color:blue;color:white">{DateTime.UtcNow}. Everything is treated as text.</div>"""),
         "beforebegin" => Results.Content($"""<div style="background-color:blue;color:white">{DateTime.UtcNow}. Click "Click Me".</div>"""),
         "afterbegin" => Results.Content($"""<div style="background-color:magenta;color:white">{DateTime.UtcNow}. You can click here</div>"""),
-        _ => Results.Content("nothing")
+        "beforeend" => Results.Content($"""<div style="background-color:brown;color:white">{DateTime.UtcNow}. You can click here.</div>"""),
+        "afterend" => Results.Content($"""<div style="background-color:green;color:white">{DateTime.UtcNow}. Click "Click Me"</div>"""),
+        _ => Results.Content("")
     };
 });
 
