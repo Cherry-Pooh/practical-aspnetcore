@@ -1,4 +1,4 @@
-# HTMX (3)
+# HTMX (4)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2 Beta 1](https://v2-0v2-0.htmx.org/posts/2024-03-15-htmx-2-0-0-beta1-is-released/) in all samples.
 
@@ -15,3 +15,7 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [swap](swap)
   
   This example shows how to control where the response from the server will be swapped related to the target using `hx-swap`.
+
+* [target](target)
+  
+  This example shows how to specify the target element where the response from the server will be swapped using `hx-target`.
