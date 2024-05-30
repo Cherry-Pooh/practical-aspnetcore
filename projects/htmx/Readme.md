@@ -6,4 +6,8 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 * [trigger-load](trigger-load)
 
-  This example shows how to use HTML `hx-trigger="load"` functionality. It will call a given url when the element is loaded.
+  This example shows how to use HTMX `hx-trigger="load"` functionality. It will call a given url when the element is loaded.
+
+* [trigger-load-2](trigger-load-2)
+
+  This example shows how to use HTMX `hx-trigger="load delay:1s"` with `hx-swap="outerHTML"` functionalities to create self updating element. 
