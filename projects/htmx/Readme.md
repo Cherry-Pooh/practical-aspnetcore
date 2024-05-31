@@ -10,7 +10,7 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 * [trigger-load-2](trigger-load-2)
 
-  This example shows how to use HTMX `hx-trigger="load delay:1s"` with `hx-swap="outerHTML"` functionalities to create self updating element. 
+  This example shows how to use HTMX `hx-trigger="load"` with `delay:1s` event modifier and `hx-swap="outerHTML"` functionalities to create self updating element. 
 
 * [trigger-once](trigger-once)
 

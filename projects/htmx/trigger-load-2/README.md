@@ -1,6 +1,6 @@
-# Load polling hx-trigger load
+# Load polling using hx-trigger load with delay
 
-This example shows `load` event trigger ([doc](https://v2-0v2-0.htmx.org/docs/#special-events)) with `delay` and [`hx-swap`](https://v2-0v2-0.htmx.org/attributes/hx-swap/). 
+This example shows `load` event trigger ([doc](https://v2-0v2-0.htmx.org/docs/#special-events)) with `delay` event modifier and [`hx-swap`](https://v2-0v2-0.htmx.org/attributes/hx-swap/). 
 
 ```html
 <div hx-get="/htmx" hx-trigger="load delay:1s" hx-swap="outerHTML"></div>
