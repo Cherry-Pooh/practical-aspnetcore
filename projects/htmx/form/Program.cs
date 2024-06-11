@@ -44,7 +44,7 @@ app.MapGet("/", (HttpContext context, IAntiforgery antiforgery) =>
     return Results.Content(html, "text/html");
 });
 
-app.MapPost("/simple", (HttpRequest request, Input i) =>
+app.MapPost("/simple", (HttpRequest request, [FromForm] Input i) =>
 {
     if (request.IsHtmx() is false)
         return Results.Content("");
