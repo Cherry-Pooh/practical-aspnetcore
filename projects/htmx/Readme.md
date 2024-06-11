@@ -1,4 +1,4 @@
-# HTMX (8)
+# HTMX (9)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2 Beta 1](https://v2-0v2-0.htmx.org/posts/2024-03-15-htmx-2-0-0-beta1-is-released/) in all samples.
 
@@ -23,6 +23,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [swap](swap)
   
   This example shows how to control where the response from the server will be swapped related to the target using `hx-swap`.
+
+* [swap-2](swap-2)
+  
+  This example shows how to use `hx-swap-oob` to enable out of band swap. It is used from the server response.
 
 * [target](target)
   
