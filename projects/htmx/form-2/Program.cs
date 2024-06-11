@@ -45,7 +45,8 @@ app.MapGet("/", (HttpContext context, IAntiforgery antiforgery) =>
                                 </select>
                             </div>
                             <div class="form-check mb-3">
-                                <input class="form-check-input" name="IsEmployed" type="checkbox" value="" id="isEmployed">
+                                <input type="hidden" name="IsEmployed" value="false">
+                                <input class="form-check-input" name="IsEmployed" type="checkbox" value="true" id="isEmployed">
                                 <label class="form-check-label" for="isEmployed">
                                     Is Employed
                                 </label>
@@ -78,16 +79,17 @@ app.MapGet("/", (HttpContext context, IAntiforgery antiforgery) =>
     return Results.Content(html, "text/html");
 });
 
-app.MapPost("/simple", (HttpRequest request, Input i) =>
+app.MapPost("/simple", (HttpRequest request, [FromForm] Input i) =>
 {
     if (request.IsHtmx() is false)
         return Results.Content("");
 
     return Results.Content($"""
-        <div class="alert alert-success">
+        <div class="alert alert-success mb-3">
             Your data has been processed.
-
-            <table class="table">
+        </div>
+        
+        <table class="table">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -116,7 +118,7 @@ app.MapPost("/simple", (HttpRequest request, Input i) =>
                     <td>{i.Transportation}</td>
                 </tr>
             </tbody>
-        </div>
+        </table>
     """);
 });
 
