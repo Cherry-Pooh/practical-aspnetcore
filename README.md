@@ -46,7 +46,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [Path String (HttpContext.Request.Path)](/projects/path-string)         | 1   |                                                                              |
 | [Problem Details Middleware](/projects/problem-details-middleware/)     | 3   |                                                                              |
 | [Razor Pages](/projects/razor-pages)                                    | 10  | TempData                                                                     |
-| [Razor Slices](/projects/razor-slices)                                  | 1   |                                                                              |
+| [RazorSlices](/projects/razor-slices)                                  | 1   |                                                                              |
 | [Request](/projects/request)                                            | 15  | Form, Cookies, Query String, Headers                                         |
 | [Request Timeouts Middleware](/projets/request-timeouts-middleware)     | 6   |                                                                              |
 | [Response](/projects/response)                                          | 3   |                                                                              |
