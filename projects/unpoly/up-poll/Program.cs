@@ -5,8 +5,8 @@ app.MapGet("/", () =>
         <!DOCTYPE html>
         <html>
             <head>
-                <script src="https://cdn.jsdelivr.net/npm/unpoly@3.7.3/unpoly.min.js"></script>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/unpoly@3.7.3/unpoly.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/unpoly@3.8.0/unpoly.min.js"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/unpoly@3.8.0/unpoly.min.css">
             </head>
             <body>
                 <div class="welcome-message" up-poll up-source="/unpoly" up-interval="500">
