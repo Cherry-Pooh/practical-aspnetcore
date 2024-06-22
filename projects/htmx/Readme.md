@@ -1,8 +1,12 @@
-# HTMX (9)
+# HTMX (10)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2 Beta 1](https://htmx.org/posts/2024-03-15-htmx-2-0-0-beta1-is-released/) in all samples.
 
 ## Core Attributes
+
+* [all-verbs](all-verbs)
+
+  This example shows all HTTP Verbs supported by HTMX.
 
 * [trigger-load](trigger-load)
 
