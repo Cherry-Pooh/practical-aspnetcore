@@ -1,6 +1,6 @@
 # HTMX hx-target
 
-This example shows how to specify the target element where the response from the server will be swapped using `hx-target` ([doc](https://v2-0v2-0.htmx.org/docs/#targets)). 
+This example shows how to specify the target element where the response from the server will be swapped using `hx-target` ([doc](https://htmx.org/docs/#targets)). 
 
 ```html
     <ul>

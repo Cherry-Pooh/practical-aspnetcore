@@ -1,6 +1,6 @@
 # HTMX hx-swap-oob to perform out of band swap 
 
-This example shows how to enable out of band swap using `hx-swap-oob` ([doc](https://v2-0v2-0.htmx.org/docs/#oob_swaps)). 
+This example shows how to enable out of band swap using `hx-swap-oob` ([doc](https://htmx.org/docs/#oob_swaps)). 
 
 The attribute is used in the response by the server. 
 

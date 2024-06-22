@@ -1,6 +1,6 @@
 # HTMX hx-swap
 
-This example shows how to control where the response from the server will be swapped related to the target using `hx-swap` ([doc](https://v2-0v2-0.htmx.org/attributes/hx-swap/)). 
+This example shows how to control where the response from the server will be swapped related to the target using `hx-swap` ([doc](https://htmx.org/attributes/hx-swap/)). 
 
 ```html
     <div class="row">

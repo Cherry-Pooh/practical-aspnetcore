@@ -15,7 +15,7 @@ app.MapGet("/", () =>
             <body>
                 <div class="container">
                     <h1>Various hx-target options</h1>
-                    <p>You can find the full documentation <a href="https://v2-0v2-0.htmx.org/docs/#targets">here</a></p>
+                    <p>You can find the full documentation <a href="https://htmx.org/docs/#targets">here</a></p>
                     <div class="row">
                         <div class="col-md-3">
                             <ul>
