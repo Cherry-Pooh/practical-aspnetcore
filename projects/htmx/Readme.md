@@ -1,4 +1,4 @@
-# HTMX (11)
+# HTMX (12)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2 Beta 1](https://htmx.org/posts/2024-03-15-htmx-2-0-0-beta1-is-released/) in all samples.
 
@@ -10,7 +10,12 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 * [hx-include](hx-include)
 
-  This example shows how to pass parameters to all supported HTTP Verbs by targeting a single `input` element. 
+  This example shows how to pass parameters to all supported HTTP Verbs by targeting a single `input` element using `hx-include`. 
+
+* [hx-vals](hx-vals)
+
+  This example shows how to pass parameters (in JSON format) to all supported HTTP Verbs using `hx-vals` . 
+
 
 ## Core Attributes
 
