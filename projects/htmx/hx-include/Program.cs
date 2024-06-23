@@ -50,7 +50,6 @@ app.MapPost("/htmx/", (HttpRequest request) =>
     return Results.Content($"POST => {DateTime.UtcNow} + {request.Form["Name"]}");
 });
 
-
 app.MapDelete("/htmx/", (HttpRequest request) =>
 {
     if (request.IsHtmx() is false)
@@ -59,7 +58,6 @@ app.MapDelete("/htmx/", (HttpRequest request) =>
     return Results.Content($"DELETE => {DateTime.UtcNow} + {request.Query["Name"]}");
 });
 
-
 app.MapPut("/htmx/", (HttpRequest request) =>
 {
     if (request.IsHtmx() is false)
@@ -67,7 +65,6 @@ app.MapPut("/htmx/", (HttpRequest request) =>
 
     return Results.Content($"PUT => {DateTime.UtcNow} + {request.Form["Name"]}");
 });
-
 
 app.MapPatch("/htmx/", (HttpRequest request) =>
 {
