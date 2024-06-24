@@ -67,6 +67,9 @@ app.MapGet("/", (HttpContext context, [FromServices] IAntiforgery anti) =>
 
 var htmx = app.MapGroup("/htmx").AddEndpointFilter(async (context, next) =>
 {
+    if (context.HttpContext.Request.IsHtmx() is false)
+        return Results.Content("");
+
     if (context.HttpContext.Request.Method == "GET")
         return await next(context);
 
@@ -76,41 +79,26 @@ var htmx = app.MapGroup("/htmx").AddEndpointFilter(async (context, next) =>
 
 htmx.MapGet("/", (HttpRequest request) =>
 {
-    if (request.IsHtmx() is false)
-        return Results.Content("");
-
     return Results.Content($"GET => {DateTime.UtcNow} + {request.Query["Name"]}");
 });
 
 htmx.MapPost("/", (HttpRequest request) =>
 {
-    if (request.IsHtmx() is false)
-        return Results.Content("");
-
     return Results.Content($"POST => {DateTime.UtcNow} + {request.Form["Name"]}");
 });
 
 htmx.MapDelete("/", (HttpRequest request) =>
 {
-    if (request.IsHtmx() is false)
-        return Results.Content("");
-
     return Results.Content($"DELETE => {DateTime.UtcNow} + {request.Query["Name"]}");
 });
 
 htmx.MapPut("/", (HttpRequest request) =>
 {
-    if (request.IsHtmx() is false)
-        return Results.Content("");
-
     return Results.Content($"PUT => {DateTime.UtcNow} + {request.Form["Name"]}");
 });
 
 htmx.MapPatch("/", (HttpRequest request) =>
 {
-    if (request.IsHtmx() is false)
-        return Results.Content("");
-
     return Results.Content($"PATCH => {DateTime.UtcNow} + {request.Form["Name"]}");
 });
 
