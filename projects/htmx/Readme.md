@@ -67,6 +67,6 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 ## Modals
 
-* [modal-bootstrap](modal-boostrap)
+* [modal-bootstrap](modal-bootstrap)
   
   This example shows how to show a modal dialog using HTMX and Bootstrap 5. 
