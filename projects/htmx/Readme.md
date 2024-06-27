@@ -1,4 +1,4 @@
-# HTMX (14)
+# HTMX (15)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -64,3 +64,9 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [form-2](form-2)
  
   This example shows a more complex example on how to handle form submission using HTMX's `hx-post`.
+
+## Modals
+
+* [modal-bootstrap](modal-boostrap)
+  
+  This example shows how to show a modal dialog using HTMX and Bootstrap 5. 
