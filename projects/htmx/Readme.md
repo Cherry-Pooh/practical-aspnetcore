@@ -1,4 +1,4 @@
-# HTMX (15)
+# HTMX (16)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -23,6 +23,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [hx-confirm](hx-confirm)
 
   This example shows how to use `hx-confirm` to ask for user confirmation before making a request
+
+* [hx-prompt](hx-prompt)
+
+  This example shows how to use `hx-prompt` to ask user for a single input before making a request
 
 ## Core Attributes
 
