@@ -33,7 +33,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [HTMX](/projects/htmx)                                                  | 16  |                                                                              |
 | [IHttpClientFactory](/projects/httpclientfactory)                       | 4   |                                                                              |
 | [IHostedService](/projects/ihosted-service)                             | 2   |                                                                              |
-| [Logging](/projects/logging)                                            | 4   |                                                                              |
+| [Logging](/projects/logging)                                            | 5   |                                                                              |
 | [Localization and Globalization](/projects/localization)                | 6   |                                                                              |
 | [Middleware](/projects/middleware)                                      | 14  |                                                                              |
 | [Mini Apps](/projects/mini)                                             | 2   |                                                                              |

@@ -1,4 +1,4 @@
-# Logging (4)
+# Logging (5)
 
 * [Basic Logging](/projects/logging/logging-1)
 
@@ -11,6 +11,10 @@
 * [JSON Console Logger](/projects/logging/logging-3)
 
   This example shows how to display log to console in structured JSON logs.
+
+* [Create logging API](/projects/logging/logging-4)
+
+  This example shows how to use `LoggerMessageAttribute` to source generate high performance logging API.
 
 * [Logging to Grafana Loki](/projects/logging/logging-Loki)
 
