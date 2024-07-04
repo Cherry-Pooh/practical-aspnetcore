@@ -1,4 +1,4 @@
-# HTMX (17)
+# HTMX (18)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -62,6 +62,9 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
   
   This example shows how to specify the target element where the response from the server will be swapped using `hx-target`.
 
+* [boost](boost)
+
+  This example shows how to use `hx-boost` to transform HTML links and form to use AJAX request and target `body` tag. 
 
 ## Form
 
