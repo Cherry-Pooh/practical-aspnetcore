@@ -1,4 +1,4 @@
-# HTMX (16)
+# HTMX (17)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -7,6 +7,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [all-verbs](all-verbs)
 
   This example shows all HTTP Verbs supported by HTMX.
+
+* [query-string](query-string)
+
+  This example shows how to access query string in all the HTTP Verbs supported by HTMX.
 
 * [hx-include](hx-include)
 
