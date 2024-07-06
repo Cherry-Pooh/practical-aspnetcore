@@ -34,7 +34,7 @@ You can find samples on new features availabel in ASP.NET Core 9(3) [here](/proj
 | [Generic Hosting](/projects/generic-host)                               | 9   |                                                                              |
 | [gRPC](/projects/grpc) (including grpc-Web)                             | 12  |                                                                              |
 | [Health Check](/projects/health-check)                                  | 6   |                                                                              |
-| [HTMX](/projects/htmx)                                                  | 21  |                                                                              |
+| [HTMX](/projects/htmx)                                                  | 22  |                                                                              |
 | [IHttpClientFactory](/projects/httpclientfactory)                       | 4   |                                                                              |
 | [IHostedService](/projects/ihosted-service)                             | 2   |                                                                              |
 | [Logging](/projects/logging)                                            | 5   |                                                                              |
