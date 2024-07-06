@@ -1,4 +1,4 @@
-# HTMX (20)
+# HTMX (21)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -39,6 +39,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [hx-select](select)
 
   This example shows how to use `hx-select` to pick up element from the server response. 
+
+* [hx-select 2](select-2)
+  
+  This example shows how to use `hx-select` with multiple selectors to pick up multiple elements from server response
 
 ## Core Attributes
 
