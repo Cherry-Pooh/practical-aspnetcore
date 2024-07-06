@@ -138,12 +138,6 @@ htmx.MapPut("/", (HttpRequest request) =>
 {
     return Results.Content($"""
     This is the response 
-    <div id="result">
-    PUT => {DateTime.UtcNow}
-    </div>
-    <div id="result2" class="mt-3" style="background-color:blue;color:white;">
-    PUT content via #result2
-    </div>
     """);
 });
 
