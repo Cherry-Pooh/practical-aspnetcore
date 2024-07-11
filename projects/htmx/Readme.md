@@ -1,4 +1,4 @@
-# HTMX (25)
+# HTMX (26)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -93,6 +93,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [hx-replace-url](hx-replace-url)
 
   This example shows how to us `hx-replace-url` to replace the current browser location history.
+
+* [hx-replace-url-2](hx-replace-url)
+
+  This example shows how to us `hx-replace-url` with a custom url to replace the current browser location history.
 
 ## Form
 
