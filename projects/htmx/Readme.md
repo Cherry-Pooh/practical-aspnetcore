@@ -1,4 +1,4 @@
-# HTMX (26)
+# HTMX (27)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -51,6 +51,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [hx-select-oob](select-oob)
 
   This example shows how to use `hx-select-oob` to pick up a specific element from server response and swap it with element of the same selection criteria.
+
+* [hx-indicator](hx-indicator)
+
+  This example demonstrates on how to show spinner indicator while waiting for AJAX requests to complete. 
 
 ## Core Attributes
 
