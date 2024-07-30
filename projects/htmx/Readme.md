@@ -1,4 +1,4 @@
-# HTMX (29)
+# HTMX (30)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -27,6 +27,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [htmx-config-request](htmx-config-request)
 
   This examples shows how to listen to `htmx:configRequest` event to modify parameters to be sent to the server. 
+
+* [htmx-response-error](htmx-response-error)
+
+  This examples shows how to listen to `htmx:responseError` event to obtain AJAX response error information.
 
 * [hx-confirm](hx-confirm)
 
