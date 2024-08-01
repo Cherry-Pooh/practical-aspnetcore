@@ -1,4 +1,4 @@
-# HTMX (30)
+# HTMX (31)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -113,6 +113,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [hx-sync-queue](hx-sync-queue)
 
   This example shows how to use `hx-sync` to synchronize AJAX requests from a single element with option `queue first`, `queue last`, and `queue all`. 
+
+* [hx-preserve](hx-preserve)
+ 
+  This example shows how to use `hx-preserve` to keep an element unchanged during HTML swap.
 
 ## Form
 
