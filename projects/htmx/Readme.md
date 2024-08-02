@@ -141,10 +141,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
   This example demonstrates how to use `HX-Replace-Url` response header to replace the current url at the browser history.
 
-* [HX-Trigger]
+* [HX-Trigger](header-hx-trigger)
 
   This example demonstrates how to use `HX-Trigger` response header to trigger custom events at the browser.
 
-* [HX-Trigger-2]
+* [HX-Trigger-2](header-hx-trigger-2)
 
   This example demonstrates how to use `HX-Trigger` response header to trigger custom events with JSON payload at the browser.
