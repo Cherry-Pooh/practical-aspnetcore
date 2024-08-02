@@ -1,4 +1,4 @@
-# HTMX (31)
+# HTMX (32)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -133,3 +133,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [modal-bootstrap](modal-bootstrap)
   
   This example shows how to show a modal dialog using HTMX and Bootstrap 5. 
+
+
+## Response Headers
+
+* [HX-replace-Url]
+
+  This example demonstrates how to use `HX-Replace-Url` response header to replace the current url at the browser history.
