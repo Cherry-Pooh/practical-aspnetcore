@@ -1,4 +1,4 @@
-# HTMX (32)
+# HTMX (33)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -137,6 +137,10 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 ## Response Headers
 
-* [HX-replace-Url](header-hx-replace-url)
+* [HX-Replace-Url](header-hx-replace-url)
 
-  This example demonstrates how to use `HX-Replace-Url` response header to replace the current url at the browser history
+  This example demonstrates how to use `HX-Replace-Url` response header to replace the current url at the browser history.
+
+* [HX-Trigger]
+
+  This example demonstrates how to use `HX-Trigger` response header to trigger custom events at the browser.
