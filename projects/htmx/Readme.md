@@ -137,6 +137,6 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 ## Response Headers
 
-* [HX-replace-Url]
+* [HX-replace-Url](header-hx-replace-url)
 
-  This example demonstrates how to use `HX-Replace-Url` response header to replace the current url at the browser history.
+  This example demonstrates how to use `HX-Replace-Url` response header to replace the current url at the browser history
