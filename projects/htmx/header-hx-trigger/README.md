@@ -1,4 +1,4 @@
-# HX-Trigger Response Headers
+# HX-Trigger Response Header
 
 This example demonstrates the usage of `HX-Trigger` response header to emit custom events at the client([doc](https://htmx.org/headers/hx-trigger/)).
 

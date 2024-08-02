@@ -1,6 +1,6 @@
-# HX-Trigger Response Header with JSON payload
+# HX-Trigger Response Header
 
-This example demonstrates the usage of `HX-Trigger` response header to emit custom events with JSON payload at the client([doc](https://htmx.org/headers/hx-trigger/)).
+This example demonstrates the usage of `HX-Trigger` response header to emit multiple custom events at the client([doc](https://htmx.org/headers/hx-trigger/)).
 
 We are using the nice utilities provided by the excellent [Htmx](https://www.nuget.org/packages/Htmx) package.
 
@@ -9,7 +9,7 @@ htmx.MapGet("/", (HttpRequest request, HttpResponse response) =>
 {
     response.Htmx(x =>
     {
-        x.WithTrigger("show-me", new { message = "GET request" });
+        x.WithTrigger("show-me, show-you");
     });
 
     return Results.Content($"GET => {DateTime.UtcNow}");
