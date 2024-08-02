@@ -25,7 +25,7 @@ app.MapGet("/", (HttpContext context, [FromServices] IAntiforgery anti) =>
             </head>
             <body>
             <h1>HX-Trigger</h1>
-            <p>Click on the below links to see the response. Don't forget to check your browser url.</p>
+            <p>Click on the below links to see the response.</p>
             <ul>
                 <li hx-get="/htmx">GET</li>
                 <li hx-post="/htmx">POST</li>
