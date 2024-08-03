@@ -1,4 +1,4 @@
-# HTMX (35)
+# HTMX (36)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -151,4 +151,8 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 
 * [HX-Trigger-3](header-hx-trigger-3)
 
-  This example demonstrates how to use `HX-Trigger` response header to trigger multiple custom events with JSON payload at the browser.
+  This example demonstrates how to use `HX-Trigger` response header to trigger multiple custom events at the browser.
+  
+* [HX-Trigger-4](header-hx-trigger-4)
+
+  This example demonstrates how to use `HX-Trigger` response header to trigger multiple custom events with JSON payloads at the browser.
