@@ -1,4 +1,4 @@
-# HTMX (37)
+# HTMX (38)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -160,3 +160,7 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [HX-Retarget](header-hx-retarget)
 
   This example demonstrates how to use `HX-Retarget` response header to override request's target and retarget to an element at the client using CSS selector.
+
+* [HX-Refresh](header-hx-refresh)
+
+  This example demonstrates how to use `HX-Refresh` response header to instruct the web browser to refresh the page. 
