@@ -34,7 +34,7 @@ You can find samples on new features availabel in ASP.NET Core 9(3) [here](/proj
 | [Generic Hosting](/projects/generic-host)                               | 9   |                                                                              |
 | [gRPC](/projects/grpc) (including grpc-Web)                             | 12  |                                                                              |
 | [Health Check](/projects/health-check)                                  | 6   |                                                                              |
-| [HTMX](/projects/htmx)                                                  | 38  |                                                                              |
+| [HTMX](/projects/htmx)                                                  | 39  |                                                                              |
 | [IHttpClientFactory](/projects/httpclientfactory)                       | 4   |                                                                              |
 | [IHostedService](/projects/ihosted-service)                             | 2   |                                                                              |
 | [Logging](/projects/logging)                                            | 5   |                                                                              |
@@ -50,7 +50,7 @@ You can find samples on new features availabel in ASP.NET Core 9(3) [here](/proj
 | [Path String (HttpContext.Request.Path)](/projects/path-string)         | 1   |                                                                              |
 | [Problem Details Middleware](/projects/problem-details-middleware/)     | 3   |                                                                              |
 | [Razor Pages](/projects/razor-pages)                                    | 10  | TempData                                                                     |
-| [RazorSlices](/projects/razor-slices)                                  | 1   |                                                                              |
+| [RazorSlices](/projects/razor-slices)                                   | 1   |                                                                              |
 | [Request](/projects/request)                                            | 15  | Form, Cookies, Query String, Headers                                         |
 | [Request Timeouts Middleware](/projets/request-timeouts-middleware)     | 6   |                                                                              |
 | [Response](/projects/response)                                          | 3   |                                                                              |
