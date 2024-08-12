@@ -1,4 +1,4 @@
-# HTMX (39)
+# HTMX (40)
 
 This example shows various examples on how to integrate [HTMX](https://htmx.org/) with ASP.NET Core Minimal API. We will be using [HTMX Nuget Package](https://www.nuget.org/packages/Htmx). We are using [HTMX 2](https://htmx.org/) in all samples.
 
@@ -23,14 +23,6 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
 * [hx-headers](hx-headers)
 
   This example shows how to pass values via HTTP headers using `hx-headers`. 
-
-* [htmx-config-request](htmx-config-request)
-
-  This examples shows how to listen to `htmx:configRequest` event to modify parameters to be sent to the server. 
-
-* [htmx-response-error](htmx-response-error)
-
-  This examples shows how to listen to `htmx:responseError` event to obtain AJAX response error information.
 
 * [hx-confirm](hx-confirm)
 
@@ -134,6 +126,19 @@ This example shows various examples on how to integrate [HTMX](https://htmx.org/
   
   This example shows how to show a modal dialog using HTMX and Bootstrap 5. 
 
+## Events
+
+* [htmx-config-request](htmx-config-request)
+
+  This examples shows how to listen to `htmx:configRequest` event to modify parameters to be sent to the server. 
+
+* [htmx-response-error](htmx-response-error)
+
+  This examples shows how to listen to `htmx:responseError` event to obtain AJAX response error information.
+
+* [htmx-after-on-load](htmx-after-on-load)
+
+  This example shows how to listen to `htmx:afterOnLoad` event, which is trigerred after the AJAX response has finished. 
 
 ## Response Headers
 
