@@ -1,6 +1,6 @@
 # ASP.NET Core 9 (3)
 
-These samples require SDK [9.0.100-preview.6](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+These samples require SDK [9.0.100-preview.7](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 
 * [TypedResults.InternalServerError](typed-results-2)
 
